@@ -1,6 +1,6 @@
 # Huff Style Guide
 
-_A mostly reasonable approach to Huff style._
+_A mostly reasonable approach to Huff styling._
 
 This style guide is based on common conventions with deviations where reasonable in the context of
 huff. Optimization is around readability, control flow clarity, and in some cases, redundant
