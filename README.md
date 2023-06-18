@@ -22,9 +22,9 @@ explanation of functionality.
 
 - One opcode per line with the following exceptions.
   - The first opcode of the line is followed by `dup1` instructions.
-  - The first opcode is a pointer and the second is a respective "*load" instruction.
+  - The first opcode is a pointer and the second is a respective "\*load" instruction.
   - A standard function dispatcher is used.
-  - A revert with no returndata.
+  - A return or revert with no returndata.
 
 ```
 // ok
