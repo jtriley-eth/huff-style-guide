@@ -328,6 +328,24 @@ explanation of functionality.
 }
 ```
 
+- Jump destination stack items' respective stack comments should be suffixed with `_dest`.
+- Any pointers to memory should be named `mem_ptr`, or suffixed with `_mem_ptr` for disambiguation.
+- Any pointers to calldata should be named `cd_ptr`, or suffixed with `_cd_ptr` for disambiguation.
+- Any sizes or lengths should be suffixed with `_len`.
+- Stack comment items should never use names such as `zero`.
+
+```
+#define macro MAIN() = takes (0) returns (0) {
+    0x20            // [arg0_cd_ptr]
+    calldataload    // [arg0]
+    0x00            // [mem_ptr, arg0]
+    mstore          // []
+    0x20            // [mem_len]
+    0x00            // [mem_ptr, mem_len]
+    return          // []
+}
+```
+
 ## Developer Documentation
 
 > Note: At the time of writing, `huffc` does not include any devdoc or similar for documentation,
