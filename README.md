@@ -422,3 +422,5 @@ explanation of functionality.
     // ...
 }
 ```
+
+> todo: loops
